@@ -1,15 +1,15 @@
 /* Base Styles */
 :root {
-    --primary-cream: #FAEBD7;
+    --primary-cream: #b61818;
     --primary-brown: #8B4513;
-    --dark-brown: #654321;
-    --light-brown: #D2691E;
-    --orange-brown: #CD853F;
-    --accent-orange: #FF8C00;
+    --dark-brown: #ffffff;
+    --light-brown: #d21e1e;
+    --orange-brown: #cd3f3f;
+    --accent-orange: #ff0000;
     --accent-red: #B22222;
     --accent-green: #228B22;
     --brown-gradient: linear-gradient(135deg, #654321 0%, #8B4513 50%, #A0522D 100%);
-    --dark-gradient: linear-gradient(135deg, #3E2723 0%, #5D4037 100%);
+    --dark-gradient: linear-gradient(135deg, #3E2723 0%, #000000 100%);
     --transition-duration: 0.5s;
 }
 
@@ -58,10 +58,10 @@ video {
 }
 
 .container {
-    width: 90%;
-    max-width: 1200px;
+    width: 100%;
+    max-width: 1500px;
     margin: 0 auto;
-    padding: 5% 0;
+    padding: 10px 0;
 }
 
 /* Typography */
@@ -73,7 +73,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .section-header {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     text-align: center;
 }
 
@@ -93,7 +93,7 @@ h1, h2, h3, h4, h5, h6 {
 .btn {
     display: inline-block;
     padding: 12px 30px;
-    border-radius: 30px;
+    border-radius: 5px;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -134,7 +134,7 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
     width: 100%;
     z-index: 1000;
-    background-color: rgba(101, 67, 33, 0.9);
+    background-color: rgba(101, 33, 33, 0.9);
     backdrop-filter: blur(10px);
     transition: all var(--transition-duration) ease;
 }
@@ -147,7 +147,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logo-img {
-    height: 40px;
+    height: 50px;
     width: auto;
 }
 
@@ -338,6 +338,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 5rem;
     margin-bottom: 1rem;
     animation: fadeInUp 1s ease;
+    -webkit-text-stroke: 1px #ffffff;
 }
 
 .hero-subtitle {
@@ -346,6 +347,7 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 0.9;
     animation: fadeInUp 1s ease 0.2s;
     animation-fill-mode: both;
+    color: #ffffff;
 }
 
 .hero-buttons {
@@ -375,7 +377,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* About Section */
 .about {
-    background: var(--dark-gradient);
+    background: #000000;
     padding: 5rem 0;
 }
 
@@ -637,13 +639,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer-logo-img {
-    height: 50px;
+    height: 150px;
     width: auto;
 }
 
 .footer-text {
     text-align: center;
     opacity: 0.7;
+    color: #FFFFFF;
 }
 
 /* Animations */
@@ -906,8 +909,8 @@ h1, h2, h3, h4, h5, h6 {
 /* --- Enhanced About Section Styles --- */
 .about {
     position: relative;
-    background: #fdf1e2;
-    min-height: 100vh;
+    background: #2c2c2c;
+    min-height: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -916,27 +919,15 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0;
 }
 
-.about::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 900px;
-    height: 900px;
-    background: url('images/Buybot GIF.gif') center center/contain no-repeat;
-    opacity: 0.07;
-    transform: translate(-50%, -50%);
-    z-index: 0;
-    pointer-events: none;
-}
+
 
 .about .container {
     position: relative;
     z-index: 1;
     width: 100%;
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 60px 20px 0 20px;
+    padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -947,7 +938,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .section-title {
-    color: #b13a1a;
+    color: #b11a1a;
     font-size: 2.8rem;
     font-weight: 900;
     letter-spacing: 2px;
@@ -955,6 +946,7 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     margin-bottom: 0.5rem;
     text-shadow: 0 2px 8px rgba(177,58,26,0.08);
+    --webkit-text-stroke: 1px #ffffff;
 }
 
 .title-underline {
@@ -1044,7 +1036,7 @@ h1, h2, h3, h4, h5, h6 {
 /* --- Section Separator --- */
 .section-separator {
     height: 100px;
-    background: linear-gradient(135deg, #fdf1e2 0%, #f5e6d3 50%, #fdf1e2 100%);
+    background: linear-gradient(135deg, #700000 0%, #700000 50%, #700000 100%);
     position: relative;
     overflow: hidden;
 }
@@ -1057,13 +1049,13 @@ h1, h2, h3, h4, h5, h6 {
     transform: translate(-50%, -50%);
     width: 200px;
     height: 4px;
-    background: linear-gradient(90deg, transparent 0%, #ffb347 50%, transparent 100%);
+    background: linear-gradient(90deg, transparent 0%, #ff4747 50%, transparent 100%);
     border-radius: 2px;
 }
 
 /* --- Tokenomics Section --- */
 .tokenomics {
-    background: linear-gradient(135deg, #f5e6d3 0%, #fdf1e2 100%);
+    background: linear-gradient(135deg, #000000 0%, #000000 100%);
     padding: 6rem 0;
     position: relative;
     overflow: hidden;
@@ -1088,6 +1080,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .tokenomics .section-title {
     color: #b13a1a;
+    --webkit-text-stroke: 1px #ffffff;
 }
 
 .tokenomics-content {
@@ -1103,11 +1096,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .token-card {
-    background: #fff8f1;
+    background: #313131;
     border-radius: 20px;
     padding: 2.5rem;
     box-shadow: 0 10px 40px rgba(177,58,26,0.15);
-    border: 3px solid #ffb347;
+    border: 3px solid #960000;
 }
 
 .token-card h3 {
@@ -1136,14 +1129,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .detail-label {
     font-weight: 700;
-    color: #b13a1a;
+    color: #ffffff;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
 .detail-value {
     font-weight: 800;
-    color: #3d2c1a;
+    color: #ffffff;
     font-size: 1.1rem;
 }
 
@@ -1161,7 +1154,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0.5rem 1rem;
     border-radius: 5px;
     font-size: 0.9rem;
-    color: #b13a1a;
+    color: #ffffff;
     max-width: 200px;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -1169,7 +1162,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .copy-btn {
-    background: #b13a1a;
+    background: #b11a1a;
     color: white;
     border: none;
     padding: 0.5rem 1rem;
@@ -1183,7 +1176,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .copy-btn:hover {
-    background: #8b2f1a;
+    background: #8b1a1a;
     transform: translateY(-2px);
 }
 
@@ -1202,11 +1195,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .token-mascot-img {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     object-fit: contain;
-    border-radius: 50%;
-    background: linear-gradient(135deg, #ffb347, #ff8c00);
+    border-radius: 10%;
+    background: linear-gradient(135deg, #690000, #5c0000);
     padding: 20px;
     box-shadow: 0 15px 50px rgba(177,58,26,0.3);
     transition: transform 0.3s ease;
